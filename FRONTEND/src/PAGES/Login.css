@@ -1,0 +1,148 @@
+.login-page {
+    min-height: 100vh;
+    width: 100%;
+    
+    background-image: url("https://t3.ftcdn.net/jpg/07/57/35/14/240_F_757351474_B51yF0npVDVFBuV3mJmAkp4NspMQbiDA.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    position: relative;
+}
+
+/* Dark overlay over background */
+.login-page::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgb(0, 0, 0,0.35);
+}
+
+/* Login box */
+.login-card {
+    position: relative;
+    z-index: 1;
+
+    width: 400px;
+    max-width: 90%;
+
+    padding: 40px;
+
+    background: rgba(15, 46, 66, 0.95);
+    border-radius: 20px;
+
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3);
+
+    text-align: center;
+}
+
+/* Heading */
+.login-card h1 {
+    font-size: 35px;
+    margin-bottom: 10px;
+    color: #4f46e5;
+}
+
+/* Subtitle */
+.login-subtitle {
+    font-size: 24px;
+    color: #7ba3f8;
+    margin-bottom: 30px;
+}
+
+/* Form */
+.form-group {
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    font-size: 20px;
+    font-weight: 600;
+    color: #4f46e5;
+    margin-bottom: 9px;
+}
+
+.form-group input {
+    width: 100%;
+    box-sizing: border-box;
+
+    padding: 13px 15px;
+
+    border: 1px solid #ddd;
+    border-radius: 10px;
+
+    font-size: 13px;
+    font-style: italic;
+
+    outline: none;
+}
+
+.form-group input:focus {
+    border-color: #4f46e5;
+}
+
+/* Forgot password */
+.forgot-password {
+    text-align: right;
+    margin-bottom: 20px;
+}
+
+.forgot-password a {
+    font-size: 13px;
+    color: #4f46e5;
+    text-decoration: none;
+}
+
+/* Login button */
+.login-error{
+    display: block !important;
+    width: 100%;
+    box-sizing: border-box;
+    color: red !important;
+    background: #fff0f0;
+    border: 1px solid #ffb3b3;
+    border-radius: 8px;
+    padding: 8px 10px;
+    font-size: 13px;
+    text-align: center;
+    margin: 8px 0;
+    font-weight: 600;
+}
+.login-btn {
+    width: 100%;
+    padding: 13px;
+
+    border: none;
+    border-radius: 10px;
+
+    background: #4f46e5;
+    color: white;
+
+    font-size: 16px;
+    font-weight: 600;
+
+    cursor: pointer;
+}
+
+.login-btn:hover {
+    background: #3730a3;
+}
+
+/* Register */
+.register-text {
+    margin-top: 25px;
+    font-size: 14px;
+    color: #666;
+}
+
+.register-text a {
+    color: #4f46e5;
+    font-weight: 600;
+    text-decoration: none;
+}

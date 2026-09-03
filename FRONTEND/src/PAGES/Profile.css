@@ -1,0 +1,102 @@
+.profile-page{
+    min-height: 100vh;
+    padding: 40px 20px;
+    background-image: url("https://cdn.wallpapersafari.com/0/38/EF5P83.jpg");
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+.profile-card{
+    width: 100%;
+    max-width: 700px;
+    background: rgb(82, 53, 65);
+    border: 1px solid var(--border);
+    padding: 32px;
+    box-shadow: var(--shadow);
+}
+.profile-header{
+    margin-bottom: 30px;
+    text-align: center;
+}
+.profile-header h1{
+    margin-bottom: 0px;
+    font-size: 35px;
+}
+.profile-header p{
+    color: var(--text);
+    font-size: 22px;
+}
+.profile-card form {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.profile-card label {
+  display: block;
+  /* flex-direction: column; */
+  gap: 9px;
+  text-align: left;
+  font-weight: 600;
+  color: var(--text-h);
+   font-size: 20px;
+}
+
+.profile-card input {
+  width: 100%;
+  font-size: 16px;
+}
+
+.profile-card button {
+  align-self: flex-start;
+  margin-top: 8px;
+  text-align: center;
+  background-color: rgb(61, 37, 46);
+}
+.profile-card label:nth-of-type(6) input,
+.profile-card label:nth-of-type(7) input{
+    background: var(--accent-bg);
+    background-color: rgb(137, 78, 102)
+}
+.required-star{
+    color: red;
+    font-size: 11px;
+    font-weight: bold;
+    margin-left: 3px;
+    line-height: 0;
+    vertical-align: super;
+
+}
+.phone-error{
+       color: red;
+       font-size: 13px;
+       margin-top: 0;
+       margin-bottom: 0;
+}
+.save-profile-row{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-top: 5px;
+}
+.profile-message{
+    color: #218838;
+    font-size: 13px;
+    font-weight: 600;
+    white-space: nowrap;
+}
+@media (max-width:768px) {
+    .profile-page{
+        padding: 24px 16px;
+    }
+    .profile-card{
+        padding: 22px 18px;
+    }
+    .profile-header h1{
+        font-size: 1.75rem;
+    }
+    .profile-card button{
+        width: 100%
+        
+    }
+}

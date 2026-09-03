@@ -1,0 +1,156 @@
+.student-profile-page {
+    min-height: 100vh;
+    padding: 45px 20px;
+    background: #f5f7ff;
+    display: flex;
+    justify-content: center;
+    box-sizing: border-box;
+}
+
+.student-profile-card {
+    width: 100%;
+    max-width: 650px;
+    background: white;
+    border-radius: 20px;
+    padding: 35px 40px;
+    box-sizing: border-box;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+}
+
+/* Header */
+
+.student-profile-header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.profile-avatar {
+    width: 50px;
+    height: 50px;
+    margin: 0 auto 15px;
+
+    border-radius: 50%;
+    background: #4055d6;
+    color: white;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.student-profile-header h1 {
+    margin: 0;
+    color: #283593;
+    font-size: 28px;
+}
+
+.student-profile-header p {
+    margin-top: 6px;
+    color: #777;
+}
+
+/* Information */
+
+.student-info {
+    border-top: 1px solid #eee;
+    border-bottom: 1px solid #eee;
+    padding: 10px 0;
+}
+
+.info-row {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 14px 5px;
+    font-size: 15px;
+    color: #555;
+}
+
+.info-label {
+    font-weight: 600;
+    color: #333;
+    font-size: 18px;
+}
+
+/* Skills */
+
+.skills-section {
+    margin-top: 12px;
+}
+
+.skills-section h3 {
+    color: #333;
+    font-size: 17px;
+    margin-bottom: 12px;
+}
+
+.skill-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 9px;
+}
+
+.skill-tag {
+    background: #e8eaff;
+    color: #283593;
+    padding: 8px 14px;
+    border-radius: 20px;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.skill-tag.wanted {
+    background: #eee9ff;
+}
+
+/* Back button */
+
+.back-button {
+    display: block;
+    margin: 30px auto 0;
+
+    padding: 11px 24px;
+
+    border: none;
+    border-radius: 8px;
+
+    background: #4055d6;
+    color: white;
+
+    font-size: 14px;
+    font-weight: 600;
+
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+
+.back-button:hover {
+    background: #5e72e1;
+}
+
+.profile-loading {
+    text-align: center;
+    margin-top: 60px;
+    color: #555;
+}
+
+/* Mobile */
+
+@media (max-width: 600px) {
+
+    .student-profile-page {
+        padding: 25px 15px;
+    }
+
+    .student-profile-card {
+        padding: 28px 22px;
+    }
+
+    .info-row {
+        flex-direction: column;
+        gap: 4px;
+    }
+}

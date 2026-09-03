@@ -1,0 +1,153 @@
+.matches-page {
+    min-height: 100vh;
+    padding: 45px 30px;
+    background: #f5f7ff;
+    box-sizing: border-box;
+}
+
+.matches-title {
+    text-align: center;
+    font-size: 34px;
+    color: #283593;
+    margin: 10px 0 8px;
+}
+
+.matches-subtitle {
+    text-align: center;
+    color: #666;
+    margin-bottom: 35px;
+}
+
+/* Container for all match cards */
+.matches-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 22px;
+}
+
+/* Student card */
+.match-card {
+    width: 100%;
+    max-width: 650px;
+    background: white;
+    padding: 25px 30px;
+    border-radius: 18px;
+    box-sizing: border-box;
+
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.match-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12);
+}
+
+/* Student name */
+.match-name {
+    font-size: 30px;
+    color: #283593;
+    margin: 0 0 18px;
+}
+
+/* Student information */
+.match-info {
+    color: #555;
+    font-size: 15px;
+    margin: 10px 0;
+}
+
+.match-info strong {
+    color: #333;
+}
+
+/* Buttons */
+.match-buttons {
+    display: flex;
+    gap: 12px;
+    margin-top: 22px;
+    justify-content: flex-start;
+}
+
+.view-profile-btn,
+.send-request-btn {
+    padding: 10px 22px;
+    border: none;
+    border-radius: 8px;
+
+    font-size: 14px;
+    font-weight: 600;
+
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+
+/* View Profile */
+.view-profile-btn {
+    background: #e8eaff;
+    color: #283593;
+}
+
+.view-profile-btn:hover {
+    background: #d8dcff;
+}
+
+/* Send Request */
+.send-request-btn {
+    background: #4055d6;
+    color: white;
+}
+
+.send-request-btn:hover {
+    background: #3044b8;
+}
+
+/* Disabled request button */
+.send-request-btn:disabled {
+    background: #8b91b8;
+    cursor: not-allowed;
+}
+
+/* Error message */
+.request-error {
+    color: #d93025;
+    font-size: 13px;
+    margin-top: 12px;
+}
+
+/* No matches */
+.no-match {
+    text-align: center;
+    color: #666;
+    font-size: 17px;
+    margin-top: 50px;
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+
+    .matches-page {
+        padding: 30px 18px;
+    }
+
+    .matches-title {
+        font-size: 28px;
+    }
+
+    .match-card {
+        padding: 22px;
+    }
+
+    .match-buttons {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .view-profile-btn,
+    .send-request-btn {
+        width: auto;
+        min-width: 140px;
+    }
+}
